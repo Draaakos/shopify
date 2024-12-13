@@ -1,0 +1,10 @@
+media-root
+node_modules
+public
+static
+*.sqlite3
+*.pyc
+shopify/dev.py
+shopify/dev.txt
+env
+bin/hash.txt
