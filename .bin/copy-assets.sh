@@ -9,9 +9,10 @@ mkdir -p static
 mkdir -p static/css
 mkdir -p static/js
 mkdir -p static/js/vendor
-mkdir -p static/webfonts
+mkdir -p static/fonts
 mkdir -p static/images
 
 
 cp -rvf src/images/* static/images
+cp -rvf src/fonts/* static/fonts
 cp -rvf src/css/* static/css

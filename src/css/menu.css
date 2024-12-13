@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu__item {
+    padding: .5em 1em .2em;
+    opacity: .9;
+}
+
+.menu__item:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.menu__item a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.menu__item--active {
+    font-weight: bold;
+    border-bottom: 4px solid var(--primary-color);
+}

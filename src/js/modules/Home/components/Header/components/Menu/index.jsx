@@ -1,16 +1,21 @@
+import { useState } from 'react';
 import menuData from './menuData.js';
+import Item from './Item.jsx';
+
+
 
 
 const Menu = () => {
+  const [ pageActive, setPageActive ] = useState(0)
+
   const items = menuData
     .map((item, idx) => (
-      <div className="header__menu__item" key={`item-${idx}`}>
-        <a href={item.path}>{item.label}</a>
-      </div>
-    ));
+      <Item key={`item-${idx}`} isActive={idx == pageActive} item={item} />
+    )
+  );
 
   return (
-    <div className="header__menu">
+    <div className="menu">
       {items}
     </div>
   )

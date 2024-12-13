@@ -1,0 +1,37 @@
+.header__promotion {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+    margin-bottom: 1em;
+}
+
+.plp-title {
+    color: #7AA65A94;
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    margin: 2em 0 1em;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+
+.plp {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    max-width: 850px;
+    margin: 1em auto;
+    margin-bottom: 100px;
+}
+
+.plp .card {
+    max-width: 223px;
+    height: 300px;
+}

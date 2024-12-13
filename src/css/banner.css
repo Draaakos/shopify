@@ -1,0 +1,76 @@
+.banner {
+    position: relative;
+    min-height: 653px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/banner/background.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.banner-item .title {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 60px;
+    max-width: 507px;
+    line-height: 60px;
+}
+
+.banner-item .description {
+    line-height: 26px;
+    font-size: 16px;
+    padding: 2em 0;
+    max-width: 482px;
+}
+
+
+.banner-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5em;
+    box-sizing: border-box;
+}
+
+
+.banner-item .image-content {
+    width: 486px;
+    height: 524px;
+}
+
+.banner-item .image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-buttons {
+    margin-bottom: 60px;
+    max-width: 430px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.banner-buttons-slider {
+    max-width: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5em;
+}
+
