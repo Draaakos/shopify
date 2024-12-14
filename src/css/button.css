@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    font-size: 16px;
 }
 
 .button:hover {
@@ -42,4 +43,32 @@
 
 .inverse {
     transform: rotateY(180deg);
+}
+
+.button-dinamic {
+    color: black;
+    border: none;
+    justify-content: center;
+}
+
+.button-dinamic path {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .button {
+        font-size: 13px;
+    }
+
+    .button-dinamic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--primary-color);
+    }
+
+    .button-dinamic path {
+        display: block;
+    }
 }

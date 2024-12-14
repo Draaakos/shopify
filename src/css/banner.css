@@ -2,10 +2,10 @@
     position: relative;
     min-height: 653px;
     color: var(--primary-color);
-    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .banner::before {
     content: "";
@@ -22,49 +22,60 @@
     background-repeat: no-repeat;
 }
 
+.banner-item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+.banner-item {
+    max-width: 486px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
 .banner-item .title {
     color: var(--primary-color);
     font-weight: 500;
-    font-size: 60px;
+    font-size: 50px;
     max-width: 507px;
     line-height: 60px;
+    text-align: center;
 }
+
 
 .banner-item .description {
     line-height: 26px;
     font-size: 16px;
     padding: 2em 0;
     max-width: 482px;
-}
-
-
-.banner-item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5em;
-    box-sizing: border-box;
+    display: none;
 }
 
 
 .banner-item .image-content {
-    width: 486px;
-    height: 524px;
+    width: 90vw;
+    height: 90vw;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    max-width: 486px;
+    max-height: 524px;
 }
 
 .banner-item .image-content img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    min-width: 286px;
 }
 
+
 .banner-buttons {
-    margin-bottom: 60px;
-    max-width: 430px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
+    margin: 30px auto 60px;
+    max-width: 300px;
 }
 
 .banner-buttons-slider {
@@ -72,5 +83,59 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: .5em;
+    margin: 0 auto;
 }
 
+
+
+@media screen and (min-width: 1024px) {
+    .banner-item .title {
+        font-size: 60px;
+        text-align: left;
+    }
+
+    .banner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-item .description {
+        display: block;
+    }
+
+    .banner-item {
+        max-width: 1100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-item .image-content {
+        width: 486px;
+        height: 510px;
+    }
+
+    .banner-item .image-content img {
+        min-width: 486px;
+    }
+
+    .banner-information {
+        padding-right: 1em;
+    }
+
+    .banner-buttons {
+        max-width: 430px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        margin-left: 0;
+    }
+
+    .banner-buttons-slider {
+        margin: 0;
+    }
+}

@@ -22,16 +22,24 @@
 }
 
 
-.plp {
+.products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1em;
-    max-width: 850px;
+    max-width: 350px;
     margin: 1em auto;
     margin-bottom: 100px;
 }
 
-.plp .card {
+.products .card {
     max-width: 223px;
     height: 300px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .products {
+        max-width: 850px;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import 'swiper/css';
@@ -13,7 +13,6 @@ import BannerItem from './BannerItem';
 
 const Banner = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
-  const swiper = useSwiper();
 
   return (
     <div className='banner'>

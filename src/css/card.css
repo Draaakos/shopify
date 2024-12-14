@@ -22,9 +22,8 @@
 
 .card__body {
     min-height: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     margin-top: 1em;
+    text-align: center;
 }
 
 
@@ -33,8 +32,22 @@
     color: white;
     padding: 2px 5px;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    max-width: 90px;
+    margin: 0 auto;
 }
 
 .card__body .button:hover {
     cursor: pointer;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .card__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1em;
+        text-align: left;
+    }
 }

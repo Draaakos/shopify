@@ -5,23 +5,25 @@ import ArrowNavigation from 'ui/ArrowNavigation';
 
 const BannerItem = ({ img, onNext, onPrev }) => {
   return (
-    <div className="banner-item">
-      <div>
-        <div className="title">Lorem ipsum dolor sit amet</div>
-        <div className="description">Nunc porttitor tortor metus, nec sagittis lectus accumsan quis. Aenean euismod mollis tempor.</div>
-
-        <div className="banner-buttons">
-          <Button text="SHOP NOW" primary>
-            <SVG src="/static/images/general/right.svg" />
-          </Button>
-          <Button text="TAKE THE QUIZ">
-            <SVG src="/static/images/general/right.svg" />
-          </Button>
+    <div className="banner-item-wrapper">
+      <div className="banner-item">
+        <div className="image-content">
+          <img src={img} alt="banner img"/>
         </div>
-        <ArrowNavigation onNext={onNext} onPrev={onPrev} />
-      </div>
-      <div className="image-content">
-        <img src={img} alt="banner img"/>
+        <div className="banner-information">
+          <div className="title">Lorem ipsum dolor sit amet</div>
+          <div className="description">Nunc porttitor tortor metus, nec sagittis lectus accumsan quis. Aenean euismod mollis tempor.</div>
+
+          <div className="banner-buttons">
+            <Button text="SHOP NOW" primary>
+              <SVG src="/static/images/general/right.svg" />
+            </Button>
+            <Button text="TAKE THE QUIZ" dynamic>
+              <SVG src="/static/images/general/right.svg" />
+            </Button>
+          </div>
+          <ArrowNavigation onNext={onNext} onPrev={onPrev} />
+        </div>
       </div>
     </div>
   );

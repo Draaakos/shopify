@@ -1,11 +1,12 @@
 import classNames from "classnames";
 
-const Button = ({ children, text, primary, small, className, onClick }) => {
+const Button = ({ children, text, primary, small, className, onClick, dynamic }) => {
   const classes = classNames({
     [className]: true,
     'button': true,
     'button--primary': primary,
-    'button-small': small
+    'button-small': small,
+    'button-dinamic': dynamic
   });
 
   return (
