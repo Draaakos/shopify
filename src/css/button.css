@@ -59,6 +59,7 @@
 @media screen and (min-width: 1024px) {
     .button {
         font-size: 13px;
+        color: var(--primary-color);
     }
 
     .button-dinamic {
@@ -70,5 +71,9 @@
 
     .button-dinamic path {
         display: block;
+    }
+
+    .button--primary {
+        color: white;
     }
 }

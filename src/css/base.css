@@ -1,11 +1,12 @@
 @import url('fonts.css');
 @import url('card.css');
 @import url('button.css');
+@import url('modal.css');
 
 @import url('menu.css');
 @import url('banner.css');
 @import url('swipper.css');
-
+@import url('product.css');
 
 
 :root {
@@ -24,4 +25,5 @@ body {
     padding: 0;
     max-width: 1440px;
     margin: 0 auto;
+    min-width: 360px;
 }

@@ -1,5 +1,5 @@
 .menu {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
@@ -24,4 +24,12 @@
 .menu__item--active {
     font-weight: bold;
     border-bottom: 4px solid var(--primary-color);
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        display: flex;
+    }
 }

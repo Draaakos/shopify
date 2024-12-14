@@ -1,0 +1,28 @@
+.detail-product {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr .2fr;
+    border-bottom: 1px solid #efefef;
+    padding: 1em 0;
+}
+
+.detail-product__strong {
+    font-weight: bold;
+}
+
+.detail-product__empty-car {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.detail-product-iva {
+    padding: 1em;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.detail-product-iva__element {
+    display: flex;
+    justify-content: end;
+    margin-top: .5em;
+}

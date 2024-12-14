@@ -56,7 +56,6 @@
 
 
 .banner-item .image-content {
-    width: 90vw;
     height: 90vw;
     border-radius: 10px;
     overflow: hidden;
@@ -74,8 +73,8 @@
 
 
 .banner-buttons {
-    margin: 30px auto 60px;
-    max-width: 300px;
+    margin: 30px auto 40px;
+    max-width: 200px;
 }
 
 .banner-buttons-slider {
@@ -103,6 +102,7 @@
 
     .banner-item .description {
         display: block;
+        padding: 1em 0;
     }
 
     .banner-item {

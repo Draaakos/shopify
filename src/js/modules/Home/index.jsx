@@ -8,22 +8,12 @@ import { HomeContext } from './context.js';
 const Home = () => {
   const { states, actions } = useHome();
 
-  console.log('actions', actions)
-
   return (
     <HomeContext.Provider value={{ states, actions }}>
       <div className="page">
-        <div>
-          <Header />
-        </div>
-
-        <div>
-          <Banner/>
-        </div>
-
-        <div>
-          <ProductList />
-        </div>
+        <Header />
+        <Banner/>
+        <ProductList />
       </div>
     </HomeContext.Provider>
   );
