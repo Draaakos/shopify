@@ -1,15 +1,17 @@
 {% extends "base.html" %}
+{% load static %}
+
 
 {% block title %}
 <title>Shopify</title>
 {% endblock %}
 
 {% block js %}
-<script async src="static/js/home.bundle.js"></script>
+<script async src="{% static 'home.bundle.js' %}"></script>
 {% endblock %}
 
 {% block css %}
-<link rel="stylesheet" href="static/css/home.css">
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
 {% endblock %}
 
 

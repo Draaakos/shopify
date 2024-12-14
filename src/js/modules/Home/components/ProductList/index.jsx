@@ -30,9 +30,7 @@ const ProductList = () => {
             item={item}
           />
         )
-      }
-
-      );
+      });
 
       return (
         <SwiperSlide>

@@ -12,7 +12,7 @@ const getConfig = async (env = { mode: 'development' }) => {
       home: getAppPath('home'),
     },
     output: {
-      path: path.resolve(__dirname, 'static', 'js'),
+      path: path.resolve(__dirname, 'build'),
       filename: '[name].bundle.js'
     },
     module: {

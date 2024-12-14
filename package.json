@@ -5,7 +5,8 @@
   "scripts": {
     "predev": "bash ./.bin/copy-assets.sh",
     "dev": "npm run compile:dev:js",
-    "compile:dev:js": "webpack --config webpack.config.cjs --progress --env mode=development --watch"
+    "compile:dev:js": "webpack --config webpack.config.cjs --progress --env mode=development --watch",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
