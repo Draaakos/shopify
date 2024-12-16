@@ -22,7 +22,7 @@ const BannerItem = ({ img, onNext, onPrev }) => {
               <SVG src="/static/images/general/right.svg" />
             </Button>
           </div>
-          <ArrowNavigation onNext={onNext} onPrev={onPrev} />
+          <ArrowNavigation left onNext={onNext} onPrev={onPrev} />
         </div>
       </div>
     </div>

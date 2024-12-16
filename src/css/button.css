@@ -41,8 +41,10 @@
     align-items: center;
 }
 
-.inverse {
-    transform: rotateY(180deg);
+.swiper-button-prev.button-small,
+.swiper-button-next.button-small {
+    width: 70px;
+    height: 30px;
 }
 
 .button-dinamic {
@@ -55,6 +57,23 @@
     display: none;
 }
 
+.button::after {
+    color: white;
+    display: none;
+}
+
+.button svg {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.inverse {
+    transform: rotateY(180deg);
+}
+
+.swiper-button-prev.inverse {
+    left: 0;
+}
 
 @media screen and (min-width: 1024px) {
     .button {

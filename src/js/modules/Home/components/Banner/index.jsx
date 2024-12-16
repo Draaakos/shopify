@@ -21,6 +21,10 @@ const Banner = () => {
         spaceBetween={0}
         slidesPerView={1}
         onSwiper={(swiper) => setSwiperInstance(swiper)}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
       >
         <SwiperSlide>
           <BannerItem

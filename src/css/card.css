@@ -11,7 +11,6 @@
 .card__header {
     display: block;
     width: 100%;
-    min-height: 60vw
 }
 
 .card img {
@@ -65,9 +64,5 @@
         grid-template-columns: repeat(2, 1fr);
         margin-top: 1em;
         text-align: left;
-    }
-
-    .card__header {
-        min-height: 230px;
     }
 }
