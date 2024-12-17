@@ -5,7 +5,7 @@ const Card = ({ item, onBuy, quantity }) => {
         <img src={item.url} alt="" />
       </div>
       <div className="card__body">
-        <div>$ {item.price}</div>
+        <div>{item.price} {item.symbol}</div>
         <div><button onClick={onBuy} className="button">BUY NOW</button></div>
       </div>
 

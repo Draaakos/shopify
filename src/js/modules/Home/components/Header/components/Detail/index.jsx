@@ -31,8 +31,8 @@ const Detail = () => {
       {products}
 
       <div className="detail-product-iva">
-        <div className="detail-product-iva__element">IVA: $ {iva.toFixed(2)}</div>
-        <div className="detail-product-iva__element">TOTAL: $ {total.toFixed(2)}</div>
+        <div className="detail-product-iva__element">IVA: {iva.toFixed(2)} ARS</div>
+        <div className="detail-product-iva__element">TOTAL: {total.toFixed(2)} ARS</div>
       </div>
     </div>
   );

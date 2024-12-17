@@ -11,7 +11,7 @@ const Item = ({ product }) => {
     <div className="detail-product">
       <div>{product.name}</div>
       <div>{product.quantity} {product.quantity == 1 ? "unidad" : "unidades"}</div>
-      <div>$ {total.toFixed(2)}</div>
+      <div>{total.toFixed(2)} ARS</div>
       <div onClick={() => actions.onRemoveFromCar(product)}><SVG src="/static/images/general/trash.svg" /></div>
     </div>
   );

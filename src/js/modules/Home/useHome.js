@@ -1,13 +1,21 @@
 import { useEffect, useReducer, useState } from "react";
 import { reducer, initialState } from "./reducer.js";
-import data from './mockdata.js';
+import productService from '../../services/product.service.js';
+import { productDTO } from './dto.js';
+
 
 const useHome = () => {
   const [ state, dispatch ] = useReducer(reducer, initialState);
   const [ swiperInstancePLP, setSwiperInstancePLP ] = useState(null);
 
   useEffect(() => {
-    dispatch({ type: 'INITIAL_LOAD', payload: data.pages });
+    productService.fetchProductList()
+      .then(response => {
+        const products = response.products.map(productDTO);
+        const data = [products, products];
+
+        dispatch({ type: 'INITIAL_LOAD', payload: data });
+      });
   }, []);
 
   const states = {
