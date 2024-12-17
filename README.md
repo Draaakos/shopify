@@ -2,6 +2,14 @@
 
 Este proyecto es una aplicación **Django** que interactúa con la **API GraphQL de Shopify** para obtener productos, realizar paginación y exponerlos mediante endpoints REST.
 
+
+## **Demo**
+
+Puedes acceder al sitio activo en el siguiente enlace:
+
+🟢 **Sitio en Vivo**: [shopify-beta-two.vercel.app](https://shopify-beta-two.vercel.app)
+
+
 ## **Características**
 
 1. **Paginación de productos**:
